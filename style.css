@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700");
+body{
+  background: #fff;
+  color: #000;
+  height: 100vh;
+  font-family: Roboto, Karla;
+}
+
+h4{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 15%;
+}
+
+.map{
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.map g {
+  stroke-width: 1px;
+}
+
+.map g:hover {
+  fill: #2298F4 !important;
+  cursor: pointer;
+}
+
+.info_panel {
+  background-color: #fff;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  color: black;  
+  padding: .4em;
+  font-size: .8em;
+  font-family: Roboto, Karla;
+  position: absolute;
+}
+
+.info_panel::first-line {
+   font-weight: bold; 
+   color: black; 
+   text-transform: uppercase; 
+}
+
+@media only screen
+    and (min-width: 320px)
+    and (max-width: 650px){
+        .map{
+            width: 100%;
+        }
+
+        .map g {
+  stroke-width: 3;
+}
+}
