@@ -27,7 +27,7 @@ h4{
 }
 
 .map g:hover {
-  fill: #2298F4 !important;
+  /*fill: #2298F4 !important;*/
   cursor: pointer;
 }
 
