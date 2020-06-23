@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Karla:400,700");
 body{
-  background: #fff;
+  background: #ccc;
   color: #000;
   height: 100vh;
   font-family: Roboto, Karla;
@@ -12,6 +12,7 @@ h4{
   font-size: 14px;
   font-weight: bold;
   margin-left: 15%;
+  margin: auto;
 }
 
 .map{
@@ -47,6 +48,10 @@ h4{
    font-weight: bold; 
    color: black; 
    text-transform: uppercase; 
+}
+
+#ZWE524{
+  image-rendering: url(map-pointer.svg);
 }
 
 @media only screen

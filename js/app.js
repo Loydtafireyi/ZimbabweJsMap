@@ -88,7 +88,7 @@ var regions=[
         for(i = 0; i < regions.length; i++) {
 
         $('#'+ regions[i].region_code)
-        .css({'fill': 'rgb(113, 182, 249' + regions[i].infected/highest_value +')'})
+        .css({'fill': 'rgb(255,0,0, 0' + regions[i].infected/highest_value +')'})
         .data('region', regions[i]);
         }
 
@@ -111,7 +111,7 @@ var regions=[
             mouseY = e.pageY; //Y coordinates of mouse
 
         $('.info_panel').css({
-            top: mouseY-120,
+            top: mouseY-200,
             left: mouseX - ($('.info_panel').width()/2)
         });
     });
