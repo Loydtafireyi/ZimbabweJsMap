@@ -97,8 +97,8 @@ var regions=[
         $('<div class="info_panel">'+
             region_data.region_name + '<br>' +
             'Infected: ' +  region_data.infected.toLocaleString("en-UK") + '<br>' +
-            'Region: ' +  region_data.deaths + '<br>' +
-            'Region: ' +  region_data.recoveries + '<br>' +
+            'Deaths: ' +  region_data.deaths + '<br>' +
+            'Recovered: ' +  region_data.recoveries + '<br>' +
             '</div>'
          )
         .appendTo('body');
@@ -111,7 +111,7 @@ var regions=[
             mouseY = e.pageY; //Y coordinates of mouse
 
         $('.info_panel').css({
-            top: mouseY-100,
+            top: mouseY-120,
             left: mouseX - ($('.info_panel').width()/2)
         });
     });
